@@ -8,7 +8,7 @@ def encode_to_morse(text: str):
     t = list(text.upper())
     for i in range(len(t)):
         if t[i] in MorseCode:
-            t[i] = MorseCode[t[i]]
+            t[i] = MorseCode[t[i]]  # если символ есть в словаре, он заменяется
     return ''.join(t)
 
 
